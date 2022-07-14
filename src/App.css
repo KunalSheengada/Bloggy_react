@@ -1,4 +1,239 @@
-.App {
+body{
+  background-color: white;
+  
+}
+
+.Navbaritems{
+  background: linear-gradient(90deg,rgb(94, 97, 254) 0%, rgb(63, 176, 252) 100%);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.navbar-logo{
+  color: azure;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.fa-blog{
+  margin-right: 1rem;
+  font-size: 1.6rem;
+}
+.nav-menu{
+  display: grid;
+  grid-template-columns: repeat(5,auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.nav-links{
+  color: beige;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+.nav-links:hover{
+  background-color: beige;
+  color: black;
+  border-radius: 5px;
+  transition: all 0.2s ease-out;
+}
+
+.fa-bars{
+  color: azure;
+}
+.nav-links-mobile{
+  display: none;
+}
+.menu-icon{
+  display: none;
+}
+
+@media screen and (max-width: 960px){
+  .Navbaritems{
+      position: relative; 
+  }
+  .nav-menu{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 500px;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+  }
+  .nav-menu.active{
+      background: green;
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease ;
+      z-index: 1;
+  }
+  .nav-links{
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+  }
+  .nav-links:hover{
+      background-color: beige;
+      border-radius: 0;
+      align-items: center;
+  }
+  .navbar-logo{
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(25%,50%);
+  }
+  .menu-icon{
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%,60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+  }
+  .fa-times{
+      color: aliceblue;
+      font-size: 2rem;
+  }
+  .nav-links-mobile{
+      display: block;
+      text-align: center;
+      padding: 3rem;
+      border-radius: 5px;
+      width: 80%;
+      background: beige;
+      text-decoration: none;
+      color: black;
+      font-size: 1.5rem;
+      align-items: center;
+      margin-left: 62px;
+  }
+  .nav-links-mobile:hover{
+      background-color: beige;
+      color: black;
+      transition: 250ms;
+  }
+  Button{
+      display: none;
+  }
+}
+
+.blogs{
+  position: relative;
+  top: 80px;
+}
+.blog{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 40px;
+  max-height: 300px;
+  min-height: 300px;
+}
+.blogimg{
+  width: 33%;
+  display: flex;
+  max-height: 100%;
+  flex-direction: column;
+}
+.img{
+  height: 400px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+
+}
+.blogdetail{
+  position: relative;
+  top: 60px;
+  width: 50%;
+  height: 20%;
+  justify-content: center;
+  margin-top: 20px;
+}
+.card-img-top{
+  height: 400px;
+}
+a{
+  text-decoration: none;
+}
+
+.addBlog{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  width: 500px;
+  height: 380px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+}
+.blog-input{
+  width: 480px;
+}
+.desc-text{
+  height: 150px;
+}
+.blog-descp{
+  margin-left: 10px;
+  margin-top: 5%;
+}
+.blog-title{
+  margin-left: 10px;
+  margin-top: 2%;
+}
+.update{
+  width: 480px;
+  margin-left: 8px;
+}
+.card-descp{
+  width: 380px;
+  max-height: 70px;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+.read{
+  width: 107px;
+}
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 790px;
+  background-color: #2c3639;
+}
+.login-content{
+  border: 2px solid grey;
+  padding: 50px;
+  box-shadow: 5px 10px 8px #888888;
+  background-color: white;
+}
+.text-center{
+  margin-top: 100px;
+}
+h3{
+  text-align: center;
+  text-transform: capitalize;
+  color: rgb(9, 9, 9);
+  font-weight: 700;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.btn{
+  margin:0%;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +270,8 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
+
+
+
+
